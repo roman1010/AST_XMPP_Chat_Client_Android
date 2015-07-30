@@ -205,7 +205,7 @@ public class XMPPChatManager {
             if (!roster.isLoaded()) {
                 roster.reloadAndWait();
             }
-        } catch (SmackException.NotLoggedInException | SmackException.NotConnectedException e) {
+        } catch (SmackException.NotLoggedInException | SmackException.NotConnectedException | InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
